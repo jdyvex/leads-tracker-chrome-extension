@@ -57,6 +57,7 @@ inputBtn.addEventListener("click", function () {
     render(myLeads);
   } else {
     myLeads.push("https://" + inputValue);
+    inputEl.value = "";
     localStorage.setItem("myLeads", JSON.stringify(myLeads));
     render(myLeads);
   }
